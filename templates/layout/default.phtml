@@ -1,0 +1,44 @@
+<?php
+$this->headLink()
+    ->prependStylesheet('/css/style.css')
+    ->prependStylesheet('https://use.fontawesome.com/releases/v5.0.6/css/all.css')
+    ->prependStylesheet('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+$this->inlineScript()
+    ->prependFile('/js/navbar-header-collapse.js')
+    ->prependFile('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    ->prependFile('https://code.jquery.com/jquery-3.3.1.min.js');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <?=$this->headTitle('Coding Matters Software Technology Services')->setSeparator(' - ')->setAutoEscape(false)?>
+    <?=$this->headMeta()?>
+    <?=$this->headLink()?>
+</head>
+<body id="page-top" data-spy="scroll">
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="clearfix"><br></div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h1 class="brand-heading">Why <strong>CODING MATTERS&#63</strong></h1>
+                        <p><strong>WE JUST DON'T MAKE IT WORK, WE DO IT RIGHT</strong></p>
+                        <p class="intro-text">Harnessing competitive advantage of your product and services in local and global scale.</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>
+                        &copy; 2018 - <?=date('Y')?> All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <?=$this->inlineScript()?>
+</body>
+</html>
